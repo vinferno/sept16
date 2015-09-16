@@ -1,7 +1,7 @@
 function add_game(name_value){
    var new_game = name_value.toUpperCase();
 
-
+   new_game = new_game.replace(/^\s+/, '').replace(/\s+$/, '');
    if (new_game===''|| new_game===null){
    	return ;
    }
